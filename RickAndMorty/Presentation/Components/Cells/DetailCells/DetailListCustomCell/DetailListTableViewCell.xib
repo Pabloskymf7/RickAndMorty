@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="403" id="KGk-i7-Jjw" customClass="DetailListTableViewCell" customModule="RickAndMorty" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="410" height="403"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="410" height="403"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KvR-WW-QUo">
+                        <rect key="frame" x="16" y="0.0" width="378" height="403"/>
+                        <color key="backgroundColor" name="CustomGrey"/>
+                    </tableView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KvR-WW-QUo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="1CR-4l-qdx"/>
+                    <constraint firstAttribute="trailing" secondItem="KvR-WW-QUo" secondAttribute="trailing" constant="16" id="SGc-H9-kCu"/>
+                    <constraint firstAttribute="bottom" secondItem="KvR-WW-QUo" secondAttribute="bottom" id="cOi-JK-1Lm"/>
+                    <constraint firstItem="KvR-WW-QUo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hE8-8S-A5O"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="CustomGrey"/>
+            <connections>
+                <outlet property="listTableView" destination="KvR-WW-QUo" id="r4y-XT-Kfh"/>
+            </connections>
+            <point key="canvasLocation" x="172.51908396946564" y="126.40845070422536"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="CustomGrey">
+            <color red="0.15294117647058825" green="0.15686274509803921" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

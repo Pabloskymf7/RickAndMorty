@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController restorationIdentifier="HomeViewController" storyboardIdentifier="HomeViewController" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="RickAndMorty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bow-91-CdV">
+                                <rect key="frame" x="16" y="117.99999999999999" width="361" height="38.333333333333329"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="RICK AND MORTY">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system" size="32"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="diR-mp-cUb">
+                                <rect key="frame" x="16" y="244.33333333333334" width="361" height="509.66666666666663"/>
+                                <color key="backgroundColor" name="CustomGrey"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="10" id="1tM-cJ-Wea">
+                                    <size key="itemSize" width="361" height="66"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8N-a0-K6N">
+                                <rect key="frame" x="18" y="172.33333333333334" width="357" height="48"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z1G-4C-wGn">
+                                        <rect key="frame" x="0.0" y="0.0" width="307" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M1V-hq-bI0">
+                                        <rect key="frame" x="307" y="0.0" width="50" height="48"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXo-pA-PPY">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="48"/>
+                                                <state key="normal" title="Button" backgroundImage="ColoredLens"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="ColoredLens" translatesAutoresizingMaskIntoConstraints="NO" id="Qjz-Dr-9Os">
+                                                <rect key="frame" x="10" y="15" width="30" height="18"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="TXo-pA-PPY" secondAttribute="bottom" id="0OR-9i-VTa"/>
+                                            <constraint firstItem="Qjz-Dr-9Os" firstAttribute="leading" secondItem="M1V-hq-bI0" secondAttribute="leading" constant="10" id="6m4-AL-oHD"/>
+                                            <constraint firstAttribute="bottom" secondItem="Qjz-Dr-9Os" secondAttribute="bottom" constant="15" id="K6e-hY-CIE"/>
+                                            <constraint firstItem="TXo-pA-PPY" firstAttribute="leading" secondItem="M1V-hq-bI0" secondAttribute="leading" id="V07-wb-tOD"/>
+                                            <constraint firstItem="Qjz-Dr-9Os" firstAttribute="centerX" secondItem="TXo-pA-PPY" secondAttribute="centerX" id="XgP-hM-URu"/>
+                                            <constraint firstItem="TXo-pA-PPY" firstAttribute="top" secondItem="M1V-hq-bI0" secondAttribute="top" id="ZjK-2J-lGG"/>
+                                            <constraint firstAttribute="trailing" secondItem="TXo-pA-PPY" secondAttribute="trailing" id="m5q-MP-vt7"/>
+                                            <constraint firstItem="Qjz-Dr-9Os" firstAttribute="top" secondItem="M1V-hq-bI0" secondAttribute="top" constant="15" id="wUC-2X-MY5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Dqf-LN-cro"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.15309226510000001" green="0.1565434933" blue="0.17255118489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Bow-91-CdV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="4ls-U9-dve"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="diR-mp-cUb" secondAttribute="trailing" constant="16" id="AEV-26-LrB"/>
+                            <constraint firstItem="diR-mp-cUb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="H48-Sr-aAK"/>
+                            <constraint firstItem="d8N-a0-K6N" firstAttribute="top" secondItem="Bow-91-CdV" secondAttribute="bottom" constant="16" id="HEq-DG-LA0"/>
+                            <constraint firstItem="diR-mp-cUb" firstAttribute="top" secondItem="d8N-a0-K6N" secondAttribute="bottom" constant="24" id="QQX-FC-nDy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="d8N-a0-K6N" secondAttribute="trailing" constant="18" id="TPl-Z1-gVw"/>
+                            <constraint firstItem="d8N-a0-K6N" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="18" id="ZUx-Nc-wvd"/>
+                            <constraint firstItem="Bow-91-CdV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="ude-Ni-oeF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="diR-mp-cUb" secondAttribute="bottom" constant="30" id="w2l-PU-8yu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Bow-91-CdV" secondAttribute="trailing" constant="16" id="xX2-k0-opO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="characterCollectionView" destination="diR-mp-cUb" id="zsp-HF-w1u"/>
+                        <outlet property="searchStackView" destination="d8N-a0-K6N" id="AJf-xC-XbB"/>
+                        <outlet property="searchTextField" destination="Z1G-4C-wGn" id="w7S-qI-T9J"/>
+                        <outlet property="titleTextLabel" destination="Bow-91-CdV" id="J0y-FE-gRj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="-23.239436619718312"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ColoredLens" width="29" height="28"/>
+        <namedColor name="CustomGrey">
+            <color red="0.15294117647058825" green="0.15686274509803921" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
